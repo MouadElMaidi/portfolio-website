@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --primary: #515151;
+  --primary-variant: #343434;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --transition: all 250ms cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+/* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  /* line-height: 1.6; */
+}
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  display: block;
+}
+/* Typography */
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+
+.section__title {
+  margin-bottom: 0.25em;
+}
+
+.section__subtitle {
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro {
+  padding: 0.25em 0em;
+  margin-bottom: 1em;
+}
+
+/* header */
+
+header {
+  background: var(--primary-variant);
+  color: var(--clr-light);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.logo__text {
+  color: var(--clr-light);
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-toggle {
+  cursor: pointer;
+}
+
+.nav {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  background: var(--primary);
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.5em;
+  margin-top: 0;
+}
+
+.nav__link {
+  color: var(--clr-light);
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.nav__item {
+  padding: 1em;
+}
+
+.nav-open {
+  height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    height: auto !important;
+    background: var(--primary-variant);
+  }
+
+  .nav__list {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+}
+
+/*  Intro section  */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.intro__img {
+  border-radius: 50%;
+  width: 60%;
+  max-width: 350px;
+}
