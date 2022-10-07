@@ -8,6 +8,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
@@ -45,29 +53,111 @@
 
     <!-- Introduction -->
     <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I'm Mouad El Maidi,
-      </h1>
+      <h1 class="section__title section__title--intro">Hi, I'm Mouad,</h1>
       <p class="section__subtitle section__subtitle--intro">
         a
         <span class="section__subtitle--job">Full-stack web developer</span>
-        based in Morocco
+        based in Morocco.
       </p>
-      <img
-        src="img/personal-img.jpg"
-        alt="a picture of mouad el maidi"
-        class="intro__img"
-      />
+      <img src="img/personal-img.jpg" alt="my image" class="intro__img" />
+      <button class="btn">Let's talk !</button>
     </section>
 
     <!-- Skillset -->
-    <section class="skillset" id="skillset"></section>
+    <section class="skillset" id="skillset">
+      <h1 class="section__title section__title--skillset">My skills</h1>
+      <div class="progress-bars">
+        <div class="progress-bar">
+          <p class="prog-title">html5</p>
+          <div class="progress-con">
+            <p class="prog-text">85%</p>
+            <div class="progress">
+              <span class="bar html"></span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <p class="prog-title">css3</p>
+          <div class="progress-con">
+            <p class="prog-text">80%</p>
+            <div class="progress">
+              <span class="bar css"></span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <p class="prog-title">javascript</p>
+          <div class="progress-con">
+            <p class="prog-text">80%</p>
+            <div class="progress">
+              <span class="bar js"></span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <p class="prog-title">ReactJS</p>
+          <div class="progress-con">
+            <p class="prog-text">70%</p>
+            <div class="progress">
+              <span class="bar react"></span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <p class="prog-title">Express</p>
+          <div class="progress-con">
+            <p class="prog-text">40%</p>
+            <div class="progress">
+              <span class="bar express"></span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-bar">
+          <p class="prog-title">MongoDB</p>
+          <div class="progress-con">
+            <p class="prog-text">40%</p>
+            <div class="progress">
+              <span class="bar mongo"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Portofolio -->
-    <section class="portofolio" id="portfolio"></section>
+    <section class="portofolio" id="portfolio">
+      <h1 class="section__title section__title--portfolio">Recent Projects</h1>
+      <div class="portfolio__images">
+        <a href="https://codepen.io/mouadelmaidi/full/PoRBNjQ">
+          <img
+            src="img/pomodoro-timer.png"
+            alt="pomodoro timer"
+            class="portfolio__project"
+          />
+        </a>
+        <a href=""
+          ><img
+            src="img/calculator.png"
+            alt="calculator"
+            class="portfolio__project"
+        /></a>
+        <a href="https://codepen.io/mouadelmaidi/full/jOzroNM"
+          ><img
+            style="object-fit: fill"
+            src="img/markdown-previewer.png"
+            alt="markdown previewer"
+            class="portfolio__project"
+        /></a>
+      </div>
+    </section>
 
     <!-- Contact -->
-    <section class="contact" id="contact"></section>
+    <section class="contact" id="contact">
+      <h1 class="contact__title">Let's talk!</h1>
+      <a href="https://www.linkedin.com/in/mouad-el-maidi-28235023a/">
+        <i class="fa-brands fa-linkedin social-icon"></i>
+      </a>
+    </section>
 
     <!-- Footer -->
     <footer class="footer"></footer>
